@@ -7,7 +7,7 @@
 为此，我们基于 [MagicData 中文普通话语料库](https://www.magicdatatech.cn/)，通过四大前沿开源TTS模型进行零样本语音克隆: [NaturalSpeech3](https://github.com/open-mmlab/Amphion/blob/main/models/codec/ns3_codec/README.md), [CosyVoice](https://github.com/FunAudioLLM/CosyVoice)  , [F5-TTS](https://github.com/SWivid/F5-TTS), [Spark-TTS](https://github.com/SparkAudio/Spark-TTS), 构建首个专注于中文场景的多模型伪造音频检测基准数据集。  
 
 
-## 模型下载
+## 数据集下载
 
 数据集已托管至 Hugging Face Hub：  [AudioSpoof](https://huggingface.co/datasets/HuShou-ZMZN/audiofake)  
 直接加载数据集：
