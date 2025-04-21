@@ -1,5 +1,5 @@
-# AudioSpoof
-## AudioSpoof 虚假音频检测数据集
+# AudioSpoof 虚假音频检测数据集
+## 简介
 
 随着TTS（Text-to-Speech）技术的快速发展，当前语音克隆模型生成的声音已难以通过简单听觉判断真伪。然而，针对**中文场景的音频伪造检测**领域仍存在显著空白：  
 1️⃣ 缺乏基于最新语音合成技术生成的伪造音频数据集（Audio Spoofing Dataset）  
@@ -11,7 +11,7 @@
 
 数据集已托管至 Hugging Face Hub：  [AudioSpoof](https://huggingface.co/datasets/HuShou-ZMZN/audiofake)  
 直接加载数据集：
-```
+```python
 from datasets import load_dataset
 dataset = load_dataset("HuShou-ZMZN/audiofake")
 ```
@@ -30,10 +30,10 @@ dataset = load_dataset("HuShou-ZMZN/audiofake")
 graph LR
     A[原始音频] --> B(TTS模型)
     B --> C{克隆音频}
+```
 
 ## 数据结构
-
-
+```
 AudioSpoof/
 ├── metadata/
 │   └── SPKINFO.txt                  # 录音人元数据
@@ -71,7 +71,7 @@ AudioSpoof/
 | dev           | 2          | 118        | 472                  | 590      |
 | test          | 4          | 180        | 720                  | 900      |
 | train         | 20         | 1105       | 4,420                | 5,525    |
-
+```
  总计：26 人 | 1,403 真实 | 5,612 伪造 | 7,015 总样本  
 
 关键说明： 
