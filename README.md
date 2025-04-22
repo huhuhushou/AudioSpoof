@@ -4,7 +4,7 @@
 1️⃣ 缺乏基于最新语音合成技术生成的伪造音频数据集（Audio Spoofing Dataset）  
 2️⃣ 现有检测方法对零样本语音克隆攻击的防御能力不足  
 
-为此，我们基于 [MagicData 中文普通话语料库](https://www.magicdatatech.cn/)，通过四大前沿开源TTS模型进行零样本语音克隆: [NaturalSpeech3](https://github.com/open-mmlab/Amphion/blob/main/models/codec/ns3_codec/README.md), [CosyVoice](https://github.com/FunAudioLLM/CosyVoice)  , [F5-TTS](https://github.com/SWivid/F5-TTS), [Spark-TTS](https://github.com/SparkAudio/Spark-TTS), 构建首个专注于中文场景的多模型伪造音频检测基准数据集。  
+为此，我们基于 [MagicData 中文普通话语料库](https://www.magicdatatech.cn/)，通过四大前沿开源TTS模型进行零样本语音克隆: [NaturalSpeech3](https://github.com/open-mmlab/Amphion/blob/main/models/codec/ns3_codec/README.md), [CosyVoice](https://github.com/FunAudioLLM/CosyVoice)  , [F5-TTS](https://github.com/SWivid/F5-TTS), [Spark-TTS](https://github.com/SparkAudio/Spark-TTS), 构建首个专注于中文场景的多模型伪造音频检测基准数据集。采用零样本克隆，可以获取较高质量的、较多人数的伪造音频数据集。  
 
 
 ## 数据集下载
