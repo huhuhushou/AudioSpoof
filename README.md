@@ -9,12 +9,7 @@
 
 ## 数据集下载
 
-数据集已托管至 Hugging Face Hub：  [AudioSpoof](https://huggingface.co/datasets/HuShou-ZMZN/audiofake)  
-直接加载数据集：
-```python
-from datasets import load_dataset
-dataset = load_dataset("HuShou-ZMZN/audiofake")
-```
+数据集已托管至 Hugging Face Hub：  [AudioSpoof](https://huggingface.co/datasets/HuShou-ZMZN/audiofake) 和[zenodo](https://zenodo.org/records/15259855)
 
 
 ## 数据构建方法
