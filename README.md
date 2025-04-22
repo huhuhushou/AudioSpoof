@@ -56,7 +56,7 @@ AudioSpoof/
 │   ├── test-sparktts/
 │   └── train-sparktts/
 └── text/
-    ├── dev.txt                      # 开发集文本（格式：路径|文本）
+    ├── dev.txt                      # 开发集文本（格式：UtteranceID SpeakerID Transcription）
     ├── test.txt                     # 测试集文本
     └── train.txt                    # 训练集文本
 
