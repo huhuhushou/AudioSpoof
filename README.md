@@ -7,6 +7,18 @@
 为此，我们基于 [MagicData 中文普通话语料库](https://www.magicdatatech.cn/)，通过四大前沿开源TTS模型进行零样本语音克隆: [NaturalSpeech3](https://github.com/open-mmlab/Amphion/blob/main/models/codec/ns3_codec/README.md), [CosyVoice](https://github.com/FunAudioLLM/CosyVoice)  , [F5-TTS](https://github.com/SWivid/F5-TTS), [Spark-TTS](https://github.com/SparkAudio/Spark-TTS), 构建首个专注于中文场景的多模型伪造音频检测基准数据集。采用零样本克隆，可以获取较高质量的、较多人数的伪造音频数据集。  
 
 
+## ECAPA_TDNN 音频伪造检测模型
+以这个数据集为基础，我们训练了模型 [ECAPA_TDNN](https://github.com/huhuhushou/ECAPA_TDNN)  
+测试集评估结果:
+- 准确率(ACC): 92.76%
+- 精确率(P): 92.68%
+- 召回率(R): 98.75%
+- F1分数: 95.62%
+- 等错误率(EER): 8.89%
+
+同时还对已经应用的AI语音场景进行测试，效果较好，泛化性强。
+
+
 ## 数据集下载
 
 数据集已托管至 Hugging Face:[AudioSpoof](https://huggingface.co/datasets/HuShou-ZMZN/audiofake) 和 [zenodo](https://zenodo.org/records/15259855)
